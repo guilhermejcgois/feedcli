@@ -1,0 +1,3 @@
+https://martinfowler.com/feed.atom
+https://realpython.com/atom.xml
+# adicione aqui outros blogs que você lê
