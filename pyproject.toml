@@ -2,7 +2,7 @@
 name = "feedcli"
 version = "0.1.0"
 description = "Feeder RSS/Atom de terminal em Python"
-authors = [{name = "Seu Nome", email = "email@exemplo.com"}]
+authors = [{name = "Guilherme Gois", email = "guilhermejcgois@outlook.com"}]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -34,3 +34,14 @@ addopts = "-q"
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.semantic_release]
+branch = "main"
+version_source = "commit"
+version_variables = ["feedcli/__init__.py:__version__"]
+version_toml = ["pyproject.toml:project.version"]
+commit_parser = "angular" # Conventional Commits
+changelog_file = "CHANGELOG.md"
+build_command = "python -m pip install --upgrade build && python -m build"
+upload_to_pypi = false
+upload_to_release = true
