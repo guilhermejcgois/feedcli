@@ -111,10 +111,23 @@ def open(idx: int):
 
 
 @app.command()
-def read(idx: int):
+def read(arg: str):
     """Renderiza o item no terminal (modo leitura)."""
     data = load_cache()
     items: list[dict[str, Any]] = cast(list[dict[str, Any]], data.get("items", []))
+    idx: int
+
+    if arg == "last":
+        idx = len(items) - 1
+    elif arg == "next":
+        idx = next((i for i, it in enumerate(items) if not bool(it.get("seen"))), 0)
+    elif arg == "first":
+        idx = 0
+    elif isinstance(arg, str) and arg.isdigit():
+        idx = int(arg)
+    elif not isinstance(arg, int):
+        idx = -1
+
     if not (0 <= idx < len(items)):
         console.print("[red]Índice inválido. Rode `feed list` para ver os itens.[/red]")
         raise typer.Exit(1)

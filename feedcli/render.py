@@ -40,4 +40,5 @@ def render_article(url: str) -> None:
                 return
         else:
             pager = "less -R"
+
     os.system(f'{pager} "{tmp}"')
