@@ -1,3 +1,88 @@
-https://martinfowler.com/feed.atom
+# ——— ENG BLOGS DE PRODUTO & ARQUITETURA
+https://netflixtechblog.com/feed
+https://engineering.atspotify.com/feed/
+https://eng.uber.com/feed/
+https://dropbox.tech/feed
+https://medium.com/airbnb-engineering/feed
+https://slack.engineering/feed
+https://stripe.com/blog/rss
+https://blog.pragmaticengineer.com/feed
+https://fly.io/blog/index.xml
+https://doordash.engineering/feed.xml
+https://segment.com/blog/rss.xml
+https://discord.com/blog/rss.xml
+
+# ——— CLOUD / SRE / DEVOPS
+https://aws.amazon.com/blogs/aws/feed/
+https://aws.amazon.com/blogs/architecture/feed/
+https://cloud.google.com/blog/topics/developers-practitioners/rss.xml
+https://azure.microsoft.com/en-us/blog/feed/
+https://cloudflareblog.com/rss/
+https://grafana.com/blog/rss/
+https://www.honeycomb.io/blog/feed.xml
+https://kubernetes.io/feed.xml
+https://cncf.io/blog/feed/
+https://sre.google/blog/index.xml
+
+# ——— PYTHON (ecossistema, boas práticas)
 https://realpython.com/atom.xml
-# adicione aqui outros blogs que você lê
+https://pycoders.com/feed.xml
+https://talkpython.fm/episodes/rss
+https://www.bitecode.dev/feed.xml
+https://adamj.eu/tech/rss.xml
+https://sethmlarson.dev/feed.xml
+https://docs.python.org/whatsnew/3.13.rss
+https://pandas.pydata.org/whatsnew.rss
+
+# ——— JS/TS (Node, TS, front)
+https://devblogs.microsoft.com/typescript/feed/
+https://nodejs.org/en/feed/blog.xml
+https://v8.dev/blog.atom
+https://react.dev/feed.xml
+https://nextjs.org/atom.xml
+https://javascriptweekly.com/rss/
+https://kentcdodds.com/blog/rss.xml
+
+# ——— DATA ENGENHARIA / ANALYTICS
+https://www.getdbt.com/blog/rss.xml
+https://airflow.apache.org/blog/feed.xml
+https://duckdb.org/feed.xml
+https://clickhouse.com/blog/rss.xml
+https://motherduck.com/blog/rss.xml
+https://benjames.io/feed.xml  # engenharia de dados prática
+https://preset.io/blog/index.xml
+
+# ——— OBSERVABILIDADE / QUALIDADE
+https://www.datadoghq.com/blog/feed/
+https://sentry.io/blog/rss.xml
+https://trunkbaseddevelopment.com/index.xml
+https://martinfowler.com/feed.atom
+
+# ——— SEGURANÇA (appsec/infosec)
+https://blog.google/project-zero/feeds/posts/default
+https://blog.portswigger.net/feeds/posts/default
+https://blog.trailofbits.com/feed/
+https://krebsonsecurity.com/feed/
+https://latacora.micro.blog/feed.xml
+
+# ——— LIDERANÇA TÉCNICA / GESTÃO ENGENHARIA
+https://leaddev.com/feed.xml
+https://www.elidedbranches.com/feed.xml
+https://www.joelonsoftware.com/feed/
+https://larahogan.me/blog/index.xml
+https://randsinrepose.com/feed/
+
+# ——— BRASIL / PT-BR (dev e tech)
+https://www.alura.com.br/artigos/rss
+https://www.tabnews.com.br/recentes/rss
+https://imasters.com.br/feed
+https://www.tableless.com.br/feed/
+https://blog.rocketseat.com.br/index.xml
+https://www.fabiopereira.me/feeds/posts/default
+https://www.akitaonrails.com/atom.xml
+
+# ——— BOLETINS/NEWSLETTERS TÉCNICAS (via RSS)
+https://buttondown.email/alexeiostrovsky/rss # infra, SRE curadoria
+https://buttondown.email/lastweekinaws/rss # AWS com humor
+https://buttondown.email/cassidoo/rss # dev semanal
+https://newsletter.pragmaticengineer.com/feed # carreira/mercado eng
