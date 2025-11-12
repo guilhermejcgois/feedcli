@@ -13,10 +13,12 @@ pip install typer[all] rich feedparser trafilatura beautifulsoup4
 
 ## Uso
 ```bash
-feed update           # baixa/atualiza cache
-feed list --refresh   # lista itens (já atualiza)
-feed read 0           # lê no terminal o item 0
-feed open 0           # abre no navegador o item 0
+feed update                         # baixa/atualiza cache
+feed list --refresh                 # lista itens (já atualiza)
+feed list --source "Spotify"        # filtra pela fonte
+feed list --search "python|airflow" # filtra pelo título (regex)
+feed read 0                         # lê no terminal o item 0
+feed open 0                         # abre no navegador o item 0
 ```
 
 ## Configuração
