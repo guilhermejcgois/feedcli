@@ -37,9 +37,11 @@ build-backend = "setuptools.build_meta"
 
 [tool.semantic_release]
 branch = "main"
-version_source = "commit"
+version_source = "tag"
+tag_format = "v{version}"
 version_variables = ["feedcli/__init__.py:__version__"]
 version_toml = ["pyproject.toml:project.version"]
+commit_version_number = true
 commit_parser = "conventional"
 changelog_file = "CHANGELOG.md"
 build_command = "python -m pip install --upgrade build && python -m build"
