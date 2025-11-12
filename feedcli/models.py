@@ -10,5 +10,6 @@ class Item:
     title: str
     link: str
     published: str | None = None
+    seen: bool = False
 
 Cache = dict[str, Any]  # {"ts": int, "items": List[Item as dict]}
