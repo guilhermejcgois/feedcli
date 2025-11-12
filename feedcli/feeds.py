@@ -17,7 +17,7 @@ def load_feeds(path: Path | None = None) -> list[str]:
         s = line.strip()
         if not s or s.startswith("#"):
             continue
-        feeds.append(s)
+        feeds.append(s.split("# ", 1)[0].strip())
     if not feeds:
         raise ValueError("feeds.txt está vazio.")
     return feeds

@@ -10,7 +10,7 @@ from .models import Item
 def fetch_all(feeds: Iterable[str], limit_per_feed: int = 10) -> list[Item]:
     items: list[Item] = []
     for url in feeds:
-        parsed = feedparser.parse(url)
+        parsed = feedparser.parse(url.strip())
         source = getattr(parsed.feed, "title", url)
         for e in parsed.entries[:limit_per_feed]:
             link = getattr(e, "link", None)
