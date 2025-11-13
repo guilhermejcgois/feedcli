@@ -29,4 +29,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
         run: |
+          semantic-release version
+          git push origin main --follow-tags
           semantic-release publish
