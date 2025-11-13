@@ -1,6 +1,6 @@
 [project]
 name = "feedcli"
-version = "0.1.0"
+version = "1.0.0"
 description = "Feeder RSS/Atom de terminal em Python"
 authors = [{name = "Guilherme Gois", email = "guilhermejcgois@outlook.com"}]
 readme = "README.md"
