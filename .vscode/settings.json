@@ -3,5 +3,7 @@
     "source.fixAll": "always",
     "source.organizeImports": "always"
   },
-  "ruff.enable": true
+  "ruff.enable": true,
+  "python.analysis.ignore": ["*"],
+  "mypy-type-checker.args": ["--config-file=pyproject.toml"]
 }

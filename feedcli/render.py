@@ -6,8 +6,8 @@ import shutil
 import tempfile
 import webbrowser
 
-import trafilatura  # type: ignore
-from rich.console import Console  # type: ignore
+import trafilatura
+from rich.console import Console
 
 console = Console()
 

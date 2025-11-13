@@ -3,16 +3,16 @@ from __future__ import annotations
 import webbrowser
 from typing import Any, cast
 
-import typer  # type: ignore
-from rich.console import Console  # type: ignore
-from rich.progress import (  # type: ignore
+import typer
+from rich.console import Console
+from rich.progress import (
     BarColumn,
     Progress,
     SpinnerColumn,
     TextColumn,
     TimeElapsedColumn,
 )
-from rich.table import Table  # type: ignore
+from rich.table import Table
 
 from .config import DEFAULT_PER_FEED
 from .core import dedup_by_link, sort_items
