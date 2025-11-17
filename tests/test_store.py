@@ -14,6 +14,7 @@ def _reload_with_tmp_cache(tmp_path, monkeypatch):
     reload(store)
     return store
 
+
 def test_save_and_load_cache_basic(tmp_path, monkeypatch):
     store = _reload_with_tmp_cache(tmp_path, monkeypatch)
 
