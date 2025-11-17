@@ -67,7 +67,7 @@ def update(per_feed: int = DEFAULT_PER_FEED):
     items = sort_items(dedup_by_link(raw))
     save_cache(items)
     data = load_cache()
-    new_count = data.new_count if hasattr(data, "new_count") else 0
+    new_count = data.new_count
     console.print(f"[green]Atualizado {len(items)} itens[/green] ( +{new_count} novos ).")
 
 
@@ -82,7 +82,7 @@ def list_cmd(
     if refresh:
         update()
     data = load_cache()
-    items = data.items if hasattr(data, "items") else []
+    items = data.items
     if source:
         import re
 
@@ -100,8 +100,8 @@ def list_cmd(
 def today(max_rows: int = 30):
     """Lista apenas itens adicionados desde o último update (prev_ts)."""
     data = load_cache()
-    prev_ts = data.prev_ts if hasattr(data, "prev_ts") else 0
-    items = data.items if hasattr(data, "items") else []
+    prev_ts = data.prev_ts
+    items = data.items
     recent = [it for it in items if it.added_ts is not None and it.added_ts > prev_ts]
     if not recent:
         console.print("[yellow]Nenhum item novo desde o último update.[/yellow]")
@@ -113,7 +113,7 @@ def today(max_rows: int = 30):
 def open(idx: int):
     """Abre o item no navegador padrão."""
     data = load_cache()
-    items = data.items if hasattr(data, "items") else []
+    items = data.items
     if not (0 <= idx < len(items)):
         console.print("[red]Índice inválido. Rode `feed list` para ver os itens.[/red]")
         raise typer.Exit(1)
@@ -138,7 +138,7 @@ def open(idx: int):
 def read(arg: str):
     """Renderiza o item no terminal (modo leitura)."""
     data = load_cache()
-    items = data.items if hasattr(data, "items") else []
+    items = data.items
     idx: int
 
     if arg == "last":
