@@ -102,7 +102,7 @@ def today(max_rows: int = 30):
     data = load_cache()
     prev_ts = data.prev_ts if hasattr(data, "prev_ts") else 0
     items = data.items if hasattr(data, "items") else []
-    recent = [it for it in items if it.added_ts is not None and it.added_ts >= prev_ts]
+    recent = [it for it in items if it.added_ts is not None and it.added_ts > prev_ts]
     if not recent:
         console.print("[yellow]Nenhum item novo desde o último update.[/yellow]")
         raise typer.Exit(0)
