@@ -156,7 +156,6 @@ def read(arg: str):
         console.print("[red]Índice inválido. Rode `feed list` para ver os itens.[/red]")
         raise typer.Exit(1)
     render_article(str(items[idx].link))
-    from .models import Item
 
     save_cache(
         [
