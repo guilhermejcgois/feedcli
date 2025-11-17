@@ -118,7 +118,6 @@ def open(idx: int):
         console.print("[red]Índice inválido. Rode `feed list` para ver os itens.[/red]")
         raise typer.Exit(1)
     webbrowser.open(str(items[idx].link))
-    from .models import Item
 
     save_cache(
         [
