@@ -122,14 +122,14 @@ def open(idx: int):
     save_cache(
         [
             Item(
-                seen=True,
+                seen=i == idx or bool(it.seen),
                 added_ts=it.added_ts,
                 link=it.link,
                 published=it.published,
                 source=it.source,
                 title=it.title,
             )
-            for it in items
+            for i, it in enumerate(items)
         ]
     )
 
@@ -160,14 +160,14 @@ def read(arg: str):
     save_cache(
         [
             Item(
-                seen=True,
+                seen=i == idx or bool(it.seen),
                 added_ts=it.added_ts,
                 link=it.link,
                 published=it.published,
                 source=it.source,
                 title=it.title,
             )
-            for it in items
+            for i, it in enumerate(items)
         ]
     )
 
