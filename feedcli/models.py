@@ -34,6 +34,6 @@ class Cache:
         return {
             "ts": self.ts,
             "prev_ts": self.prev_ts,
-            "items": [it.__dict__ for it in self.items],
+            "items": [it.to_dict() for it in self.items],
             "new_count": self.new_count,
         }
