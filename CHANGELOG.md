@@ -2,6 +2,51 @@
 
 <!-- version list -->
 
+## v1.1.0 (2025-11-17)
+
+### Bug Fixes
+
+- **cli**: Wrong comparison to get items added 'today'
+  ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+- **cli**: Wrongly marking all as read ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+### Chores
+
+- Sync vscode config with styling tooling
+  ([`eb7bdc0`](https://github.com/guilhermejcgois/feedcli/commit/eb7bdc0d25d5e2535f89d34437c753c966123ba6))
+
+- **cli**: Remove dup import ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+- **cli**: Removes dup import ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+### Features
+
+- Adds new 'today' command ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+### Refactoring
+
+- **cli**: Removes unnecessary ternaries ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+- **model**: Call to_dict instead __dict__ ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+### Testing
+
+- **store**: Add more tests ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+- **today**: Add command integrations tests
+  ([#9](https://github.com/guilhermejcgois/feedcli/pull/9),
+  [`0b303b9`](https://github.com/guilhermejcgois/feedcli/commit/0b303b9b87fbf309d83f956fed9005ed5e132467))
+
+
 ## v1.0.0 (2025-11-13)
 
 ### Chores
