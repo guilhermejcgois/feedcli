@@ -14,6 +14,7 @@ pip install typer[all] rich feedparser trafilatura beautifulsoup4
 ## Uso
 ```bash
 feed update                         # baixa/atualiza cache
+feed today                          # mostra apenas itens adicionados desde o último update
 feed list --refresh                 # lista itens (já atualiza)
 feed list --source "Spotify"        # filtra pela fonte
 feed list --search "python|airflow" # filtra pelo título (regex)

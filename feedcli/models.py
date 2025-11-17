@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any
 
 
 @dataclass(frozen=True)
@@ -11,5 +10,30 @@ class Item:
     link: str
     published: str | None = None
     seen: bool = False
+    added_ts: int | None = None
 
-Cache = dict[str, Any]  # {"ts": int, "items": List[Item as dict]}
+    def to_dict(self):
+        return {
+            "source": self.source,
+            "title": self.title,
+            "link": self.link,
+            "published": self.published,
+            "seen": self.seen,
+            "added_ts": self.added_ts,
+        }
+
+
+@dataclass()
+class Cache:
+    ts: int
+    prev_ts: int
+    items: list[Item]
+    new_count: int
+
+    def to_dict(self):
+        return {
+            "ts": self.ts,
+            "prev_ts": self.prev_ts,
+            "items": [it.__dict__ for it in self.items],
+            "new_count": self.new_count,
+        }
